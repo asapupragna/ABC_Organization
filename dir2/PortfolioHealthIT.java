@@ -30,6 +30,9 @@ public class PortfolioHealthIT extends WorkspaceTestBase implements WorkspaceCon
 	private long busApp_count,busCap_count,busAppWithOutCap_count,busAppWithOutOwners_count,busAppNotAssessed_count,busAppWithOutAS_count,busAppWithOutAA_count,busCapWithOutBusApp_count,busCapNotAssessed_count;
 	public static final DataLoader fDataLoader = new DataLoader();
 	private String busAppNotRetriedQuery = "life_cycle_stage!=End of Life^ORlife_cycle_stageISEMPTY^install_status!=3^ORinstall_statusISEMPTY";
+
+	private String text = "Updating source code";
+	private String add = "Adding some code to branch";
 	
 	@BeforeClass
 	public void setup() {
