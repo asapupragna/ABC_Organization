@@ -24,6 +24,7 @@ public class PortfolioFiltersIT extends WorkspaceTestBase implements WorkspaceCo
 	private String apmUserName = "apmUser " + apmUtils.getRandomWord();
 	private String apmUserId,query;
 	private String retired_or_eol_business_app_query = "^install_status!=3^ORinstall_statusISEMPTY^life_cycle_stage!=End of Life^ORlife_cycle_stageISEMPTY";
+	private String pushCode = "push";
 
 	@BeforeClass
 	public void setup() {
